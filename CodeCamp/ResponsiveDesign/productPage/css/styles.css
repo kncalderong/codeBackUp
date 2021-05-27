@@ -1,0 +1,325 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+a{
+  text-decoration: none;     /**removes text decoration of the links**/
+  color: #000;
+}
+li{
+  list-style:none;
+}
+body{
+  font-family: 'KoHo', sans-serif;
+}
+
+/************HEADER************/
+
+header{
+  min-height: 75px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #FFFFFF;
+}
+#head-container {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  padding: 0px 20px;
+  font-size: 1.5em;
+}
+
+ .nav-header{
+  width: 60vw;
+  display: flex;
+  align-items: center;
+}
+ .nav-header a {
+  margin: 0px 20px;
+}
+ #header-img{
+  max-width: 100px;
+}
+
+
+ #collapsable-nav{
+  width: 40vw;
+  margin: 0px 20px;
+}
+#collapsable-nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/************END HEADER************/
+
+/*************FOOTER***********/
+
+footer{
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #ddd;
+  font-size: 1.2em;
+  }
+footer > ul{
+  display: flex;
+  justify-content: flex-end;
+}
+footer > ul > li{
+  padding: 0 10px;
+}
+footer > span{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+
+/*************END FOOTER***********/
+
+/**************MAIN CONTENT**********/
+
+/**hero form**/
+#hero {
+  display: flex;
+  margin-top: 7vw;
+  height: 200px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#hero h2{
+  font-size: 2em;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#hero input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+#hero input[type='submit']{
+  max-width: 150px;
+  width: 100%;
+  margin: 15px 0px;
+  height: 30px;
+}
+.btn{
+  padding: 0 20px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #f1c40f;
+  border: 0;
+}
+
+
+/**grid of info*/
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.grid{
+  display: flex;
+}
+#features .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: #83B420;
+}
+#features .desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+/**video**/
+#how-it-works{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/**Pricing**/
+#pricing{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%/3);
+  margin: 10px;
+  border: 1px solid #000;
+}
+.product > .level{
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.product > h2{
+  margin-top: 10px;
+}
+
+#img-cactus, #img-ech, #img-orchid{
+  width: 95%;
+  height: 200px;
+  margin: 15px 0;
+}
+#img-ech{
+  background: url(/images/ech-agav.jpeg) no-repeat;
+  height: 200px;
+  text-align: center;
+  background-position: 50% 50%;
+  background-size: auto 200px;
+}
+#img-cactus{
+  background: url(/images/cactus.jpg) no-repeat;
+  height: 200px;
+  text-align: center;
+  background-position: 50% 50%;
+  background-size: auto 200px;
+}
+#img-orchid{
+  background: url(/images/orchid.jpeg) no-repeat;
+  height: 200px;
+  text-align: center;
+  background-position: 50% 50%;
+  background-size: auto 200px;
+}
+
+.product > button{
+  height: 30px;
+  margin-bottom: 10px;
+  max-width: 130px;
+  width: 100%;
+}
+
+
+
+
+
+/****************END MAIN CONTENT*************/
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /**HEADER**/
+  #collapsable-nav {
+    margin-top: 10px;
+  }
+   #collapsable-nav ul{
+    flex-direction: column;
+  }
+ #collapsable-nav ul li {
+    margin: 0.5vw;
+  }
+
+  /**MAIN**/
+  #hero {
+    margin-top: 15vw;
+  }
+
+  /**Pricing**/
+  #pricing{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product{
+    width: calc(50%);
+    margin: 10px;
+    border: 1px solid #000;
+  }
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+  /***HEADER**/
+  header{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #head-container{
+    flex-direction: column;
+  }
+
+ .nav-header{
+    width: 100%;
+  }
+ .nav-header .navbar-brand{
+    padding-left: 10vw;
+  }
+  #collapsable-nav{
+    width: 100%;
+    margin: 5px 20px;
+    align-items: center;
+    text-align: center;
+  }
+  #collapsable-nav ul{
+    flex-direction: column;
+  }
+  #collapsable-nav ul li {
+    margin: 0.5vw;
+  }
+
+  /**MAIN**/
+  #hero {
+    margin-top: 32vw;
+  }
+
+  /**Pricing**/
+  #pricing{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product{
+    width: calc(50%);
+    margin: 10px;
+    border: 1px solid #000;
+  }
+
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 600px) {
+  #hero {
+    margin-top: 40vw;
+  }
+}

@@ -1,0 +1,79 @@
+/* general*/
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #C9E5F6;
+
+}
+
+#main{
+  text-align: center;
+}
+
+/* specific lines*/
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+#img-div {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #D8EEFC;
+}
+#img-div img{
+  width: 85%;
+}
+#img-div figcaption {
+  margin-top: 5px;
+}
+#main .time-line{
+  width: 55%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#main .time-line li{
+  text-align: left;
+  margin: 20px;
+}
+
+#main #words_indian {
+  width: 55%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#main #link-wiki{
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+}
