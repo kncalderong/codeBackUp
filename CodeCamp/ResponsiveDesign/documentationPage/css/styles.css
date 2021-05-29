@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.2em;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+header{
+  font-size: 1.3em;
+  font-weight: 900;
+}
+
+/*************navbar***************/
+
+#navbar{
+  display: block;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 300px;
+  height: 100%;
+  border-right: 2px solid;
+}
+
+#navbar >header{
+  padding:10px;
+  text-align: center;
+  margin: 10px;
+}
+
+#navbar > ul{
+  height: 88%; /**it has to be smaller than container (#navar. which is 100%)*/
+  overflow-y: auto;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+#navbar > ul >li{
+  list-style: none;
+  padding: 10px;
+  border-top:2px solid;
+}
+
+/**************end navbar***************/
+
+
+/**************MAIN CONTENT**********/
+#main-doc{
+  position: absolute;
+  margin-left: 305px;
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 17px;
+  margin-top: 17px;
+}
+.main-section li {
+  margin-bottom: 15px;
+}
+code{
+  display:block;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding:15px;
+  margin:10px;
+  font-size: 0.9em;
+  
+}
+
+
+/****************END MAIN CONTENT*************/
+
+
+/********** small devices only **********/
+@media (max-width: 780px) {
+
+  #navbar{
+    width: 100%;
+    border-bottom:2px solid;
+    position: relative;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  #navbar > ul {
+    padding-bottom:0;
+  }
+
+  #main-doc{
+    position: relative;
+    padding: 20px;
+    margin:0;
+  }
+
+}
